@@ -1,0 +1,18 @@
+{
+  "name": "cse6242",
+  "private": true,
+  "scripts": {
+    "lint": "biome lint .",
+    "format": "biome format . --write",
+    "check": "biome check .",
+    "typecheck": "pnpm --filter @cse6242/backend typecheck && pnpm --filter @cse6242/frontend typecheck",
+    "dev": "pnpm --filter @cse6242/backend dev & pnpm --filter @cse6242/frontend dev",
+    "dev:backend": "pnpm --filter @cse6242/backend dev",
+    "dev:frontend": "pnpm --filter @cse6242/frontend dev",
+    "build": "pnpm --filter @cse6242/backend build && pnpm --filter @cse6242/frontend build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.13",
+    "typescript": "^5.9.3"
+  }
+}
